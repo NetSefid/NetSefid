@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>در حال بارگذاری...</title>
+
+  <!-- انتقال بعد از 2.5 ثانیه -->
+  <meta http-equiv="refresh" content="2.5;url=menu.html">
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(180deg, #ffffff, #f2f2f2);
+    }
+
+    img {
+      width: 80vw;
+      max-width: 360px;
+      min-width: 240px;
+      opacity: 0;
+      animation: logoFade 1.6s ease forwards;
+    }
+
+    @keyframes logoFade {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <img src="logo.png" alt="Brand Logo">
+</body>
+</html>
