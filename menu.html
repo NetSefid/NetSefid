@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>دسترسی سریع</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(180deg, #f6f7f9, #eaecef);
+      font-family: sans-serif;
+    }
+
+    .card {
+      width: 92vw;
+      max-width: 380px;
+      background: #ffffff;
+      padding: 32px 26px;
+      border-radius: 22px;
+      box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+      animation: cardUp 0.5s ease;
+    }
+
+    @keyframes cardUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 22px;
+      color: #111;
+      text-align: center;
+    }
+
+    .btn {
+      display: block;
+      text-decoration: none;
+      padding: 18px;
+      margin: 14px 0;
+      border-radius: 14px;
+      font-size: 18px;
+      text-align: center;
+      transition: 0.25s;
+    }
+
+    .telegram {
+      background: #2AABEE;
+      color: #ffffff;
+    }
+
+    .telegram:hover {
+      background: #1d92cc;
+    }
+
+    .pdf {
+      background: #111111;
+      color: #ffffff;
+    }
+
+    .pdf:hover {
+      background: #333333;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <div class="title">انتخاب کنید</div>
+
+    <a class="btn telegram" href="https://t.me/NetSefidbot">
+      💬 خرید اشتراک
+    </a>
+
+    <a class="btn pdf" href="catalog.pdf">
+      📄 مشاهده PDF
+    </a>
+  </div>
+
+</body>
+</html>
